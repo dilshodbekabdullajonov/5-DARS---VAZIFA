@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COFFEE SHOP | DILSHODBEK</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -87,7 +88,7 @@
           <h2 class="features">Features</h2>
 
           <div class="wrapper-2 container">
-            <div class="quality">
+            <div data-aos="fade-up" class="quality">
               <img class="feature-img" src="./imgs/coffee-logo.svg" alt="" />
               <h2 class="features-title">High Quality</h2>
               <p class="features-text">
@@ -96,7 +97,7 @@
                 that captivates your taste buds.
               </p>
             </div>
-            <div class="wifi">
+            <div data-aos="fade-up" class="wifi">
               <img class="feature-img" src="./imgs/wifi.png" alt="" />
               <h2 class="features-title">Fast Wi-Fi and Work Area</h2>
               <p class="features-text">
@@ -105,7 +106,7 @@
                 creative ideas bloom while sipping your favorite coffee.
               </p>
             </div>
-            <div class="room">
+            <div data-aos="fade-up" class="room">
               <img class="feature-img" src="./imgs/room.png" alt="" />
               <h2 class="features-title">Comfortable and Friendly Room</h2>
               <p class="features-text">
@@ -114,7 +115,7 @@
                 create a pleasant experience.
               </p>
             </div>
-            <div class="menu">
+            <div data-aos="fade-up" class="menu">
               <img class="feature-img" src="./imgs/menu.png" alt="" />
               <h2 class="features-title">Creative and Innovative Menu</h2>
               <p class="features-text">
@@ -128,5 +129,9 @@
       </section>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

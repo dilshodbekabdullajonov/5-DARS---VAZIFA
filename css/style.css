@@ -194,10 +194,16 @@ main {
 
 .wrapper-2 {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 90px;
-  height: 605px;
+}
+
+.wrapper-2 div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .features-title {
@@ -218,7 +224,7 @@ main {
   text-align: center;
   font-weight: 400;
   font-family: "Rubik", sans-serif;
-  color: #FFF4D8;
+  color: #fff4d8;
 }
 
 .feature-img {
