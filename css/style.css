@@ -18,6 +18,8 @@ button {
   outline: none;
 }
 
+/* NAV-BAR START */
+
 header {
   background-image: url("../imgs/site-background.png");
   background-position: center;
@@ -74,7 +76,7 @@ main {
 .site-links-2:hover {
   font-weight: 800;
   color: #f39c11;
-  transform: scale(1.10);
+  transform: scale(1.1);
 }
 
 .site-title-text {
@@ -87,7 +89,7 @@ main {
   letter-spacing: 0%;
   font-weight: 400;
   font-family: "Lobster", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 108px;
   padding-bottom: 366px;
 }
@@ -96,10 +98,173 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F39C11;
+  background-color: #f39c11;
   border-radius: 50px;
   width: 70px;
   height: 70px;
   margin-left: auto;
   margin-right: auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s all ease;
+  margin-bottom: 10px;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
+
+.hamburger-list {
+  padding: 0;
+}
+
+.list-btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+/* NAV-BAR END */
+
+/* MAIN SECTION START */
+
+.about-title {
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.33px;
+  font-weight: 400;
+  font-family: "Lobster", sans-serif;
+}
+
+.about-text {
+  width: 517px;
+  height: 137px;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.33px;
+  color: #555555;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  margin-right: 69px;
+  margin-top: 33px;
+  margin-bottom: 17px;
+}
+
+.learn-btn {
+  width: 160px;
+  height: 60px;
+  outline: none;
+  background-color: #f39c11;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  color: white;
+  letter-spacing: -0.33px;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #FFF4D8;
+}
+
+.section-1 {
+  background-color: #FFF4D8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1500px) {
+  .hamburger-list {
+    display: none;
+  }
+}
+
+@media (max-width: 1110px) {
+  .site-title {
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-weight: 400;
+    font-family: "Lobster", sans-serif;
+    color: #ffffff;
+    padding-top: 108px;
+    padding-bottom: 366px;
+  }
+
+  .hamburger-list {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .site-title {
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-weight: 400;
+    font-family: "Lobster", sans-serif;
+    color: #ffffff;
+    padding-top: 108px;
+    padding-bottom: 366px;
+  }
+
+  .site-logo-2 {
+    width: 180px;
+    height: 60px;
+  }
+
+  .shop-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .user-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .arrow {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .site-logo-2 {
+    width: 149px;
+    height: 63px;
+  }
+
+  .site-links {
+    font-size: 15px;
+    gap: 15px;
+  }
+
+  .site-profile {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    background-image: url("../imgs/site-bg-mobile.png");
+  }
+
+  .site-links {
+    display: none;
+  }
+
+  .hamburger-list {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 570px) {
+  .site-profile {
+  }
 }
